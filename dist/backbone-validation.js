@@ -311,6 +311,15 @@ Backbone.Validation = (function(_){
       configure: function(options) {
         _.extend(defaultOptions, options);
       },
+      
+      bindStickitModel: function(view, model, options) {
+        options = _.defaults(options, {selector: view.bindings});
+        options = _.extend({}, defaultOptions, defaultCallbacks, options);
+        if(model) {
+          bindModel(view, model, options);
+        }
+      },
+
 
       // Hooks up validation on a view with a model
       // or collection
