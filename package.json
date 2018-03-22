@@ -27,7 +27,7 @@
     "test": "grunt buster",
     "prepublish": "grunt"
   },
-  "main": "./dist/backbone-validation-amd.js",
+  "main": "./dist/backbone-validation.js",
   "dependencies": {
     "backbone": ">=1.0.0",
     "underscore": ">=1.4.3"
